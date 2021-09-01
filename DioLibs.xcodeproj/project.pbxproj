@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E23C449D26CC62AB0016C981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C449C26CC62AB0016C981 /* AppDelegate.swift */; };
+		E23C449F26CC62AB0016C981 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C449E26CC62AB0016C981 /* SceneDelegate.swift */; };
+		E23C44A126CC62AB0016C981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C44A026CC62AB0016C981 /* ViewController.swift */; };
+		E23C44A426CC62AB0016C981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23C44A226CC62AB0016C981 /* Main.storyboard */; };
+		E23C44A626CC62AE0016C981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23C44A526CC62AE0016C981 /* Assets.xcassets */; };
+		E23C44A926CC62AE0016C981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23C44A726CC62AE0016C981 /* LaunchScreen.storyboard */; };
+		E23C44B426CC62AE0016C981 /* DioLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C44B326CC62AE0016C981 /* DioLibsTests.swift */; };
+		E23C44BF26CC62AE0016C981 /* DioLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C44BE26CC62AE0016C981 /* DioLibsUITests.swift */; };
+		E23C44CE26CC634A0016C981 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E23C44CD26CC634A0016C981 /* Alamofire */; };
+		E23C44D226CC69340016C981 /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C44D126CC69340016C981 /* PokemonResponse.swift */; };
+		E23C44D526CC6E260016C981 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E23C44D426CC6E260016C981 /* Lottie */; };
+		E23C44D826CC6E530016C981 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E23C44D726CC6E530016C981 /* Kingfisher */; };
+		E23C44DA26CC6F130016C981 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = E23C44D926CC6F130016C981 /* pokemon.json */; };
+		E23C44E126CC85BE0016C981 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E23C44E026CC85BE0016C981 /* MBProgressHUD */; };
+		E23C44E526CC91FE0016C981 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C44E426CC91FE0016C981 /* ViewController2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E23C44B026CC62AE0016C981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23C449126CC62AB0016C981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23C449826CC62AB0016C981;
+			remoteInfo = DioLibs;
+		};
+		E23C44BB26CC62AE0016C981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23C449126CC62AB0016C981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23C449826CC62AB0016C981;
+			remoteInfo = DioLibs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E23C449926CC62AB0016C981 /* DioLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DioLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C449C26CC62AB0016C981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E23C449E26CC62AB0016C981 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E23C44A026CC62AB0016C981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E23C44A326CC62AB0016C981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E23C44A526CC62AE0016C981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E23C44A826CC62AE0016C981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E23C44AA26CC62AE0016C981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23C44AF26CC62AE0016C981 /* DioLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DioLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C44B326CC62AE0016C981 /* DioLibsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioLibsTests.swift; sourceTree = "<group>"; };
+		E23C44B526CC62AE0016C981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23C44BA26CC62AE0016C981 /* DioLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DioLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C44BE26CC62AE0016C981 /* DioLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioLibsUITests.swift; sourceTree = "<group>"; };
+		E23C44C026CC62AE0016C981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23C44D126CC69340016C981 /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		E23C44D926CC6F130016C981 /* pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
+		E23C44E426CC91FE0016C981 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E23C449626CC62AB0016C981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C44D826CC6E530016C981 /* Kingfisher in Frameworks */,
+				E23C44CE26CC634A0016C981 /* Alamofire in Frameworks */,
+				E23C44E126CC85BE0016C981 /* MBProgressHUD in Frameworks */,
+				E23C44D526CC6E260016C981 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44AC26CC62AE0016C981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44B726CC62AE0016C981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E23C449026CC62AB0016C981 = {
+			isa = PBXGroup;
+			children = (
+				E23C449B26CC62AB0016C981 /* DioLibs */,
+				E23C44B226CC62AE0016C981 /* DioLibsTests */,
+				E23C44BD26CC62AE0016C981 /* DioLibsUITests */,
+				E23C449A26CC62AB0016C981 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E23C449A26CC62AB0016C981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E23C449926CC62AB0016C981 /* DioLibs.app */,
+				E23C44AF26CC62AE0016C981 /* DioLibsTests.xctest */,
+				E23C44BA26CC62AE0016C981 /* DioLibsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E23C449B26CC62AB0016C981 /* DioLibs */ = {
+			isa = PBXGroup;
+			children = (
+				E23C449C26CC62AB0016C981 /* AppDelegate.swift */,
+				E23C449E26CC62AB0016C981 /* SceneDelegate.swift */,
+				E23C44D126CC69340016C981 /* PokemonResponse.swift */,
+				E23C44A026CC62AB0016C981 /* ViewController.swift */,
+				E23C44A226CC62AB0016C981 /* Main.storyboard */,
+				E23C44E426CC91FE0016C981 /* ViewController2.swift */,
+				E23C44A526CC62AE0016C981 /* Assets.xcassets */,
+				E23C44A726CC62AE0016C981 /* LaunchScreen.storyboard */,
+				E23C44AA26CC62AE0016C981 /* Info.plist */,
+				E23C44D926CC6F130016C981 /* pokemon.json */,
+			);
+			path = DioLibs;
+			sourceTree = "<group>";
+		};
+		E23C44B226CC62AE0016C981 /* DioLibsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E23C44B326CC62AE0016C981 /* DioLibsTests.swift */,
+				E23C44B526CC62AE0016C981 /* Info.plist */,
+			);
+			path = DioLibsTests;
+			sourceTree = "<group>";
+		};
+		E23C44BD26CC62AE0016C981 /* DioLibsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E23C44BE26CC62AE0016C981 /* DioLibsUITests.swift */,
+				E23C44C026CC62AE0016C981 /* Info.plist */,
+			);
+			path = DioLibsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E23C449826CC62AB0016C981 /* DioLibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23C44C326CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibs" */;
+			buildPhases = (
+				E23C449526CC62AB0016C981 /* Sources */,
+				E23C449626CC62AB0016C981 /* Frameworks */,
+				E23C449726CC62AB0016C981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DioLibs;
+			packageProductDependencies = (
+				E23C44CD26CC634A0016C981 /* Alamofire */,
+				E23C44D426CC6E260016C981 /* Lottie */,
+				E23C44D726CC6E530016C981 /* Kingfisher */,
+				E23C44E026CC85BE0016C981 /* MBProgressHUD */,
+			);
+			productName = DioLibs;
+			productReference = E23C449926CC62AB0016C981 /* DioLibs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E23C44AE26CC62AE0016C981 /* DioLibsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23C44C626CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibsTests" */;
+			buildPhases = (
+				E23C44AB26CC62AE0016C981 /* Sources */,
+				E23C44AC26CC62AE0016C981 /* Frameworks */,
+				E23C44AD26CC62AE0016C981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23C44B126CC62AE0016C981 /* PBXTargetDependency */,
+			);
+			name = DioLibsTests;
+			productName = DioLibsTests;
+			productReference = E23C44AF26CC62AE0016C981 /* DioLibsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E23C44B926CC62AE0016C981 /* DioLibsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23C44C926CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibsUITests" */;
+			buildPhases = (
+				E23C44B626CC62AE0016C981 /* Sources */,
+				E23C44B726CC62AE0016C981 /* Frameworks */,
+				E23C44B826CC62AE0016C981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23C44BC26CC62AE0016C981 /* PBXTargetDependency */,
+			);
+			name = DioLibsUITests;
+			productName = DioLibsUITests;
+			productReference = E23C44BA26CC62AE0016C981 /* DioLibsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E23C449126CC62AB0016C981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E23C449826CC62AB0016C981 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E23C44AE26CC62AE0016C981 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E23C449826CC62AB0016C981;
+					};
+					E23C44B926CC62AE0016C981 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E23C449826CC62AB0016C981;
+					};
+				};
+			};
+			buildConfigurationList = E23C449426CC62AB0016C981 /* Build configuration list for PBXProject "DioLibs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E23C449026CC62AB0016C981;
+			packageReferences = (
+				E23C44CC26CC634A0016C981 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E23C44D326CC6E260016C981 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E23C44D626CC6E530016C981 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E23C44DF26CC85BE0016C981 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
+			productRefGroup = E23C449A26CC62AB0016C981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E23C449826CC62AB0016C981 /* DioLibs */,
+				E23C44AE26CC62AE0016C981 /* DioLibsTests */,
+				E23C44B926CC62AE0016C981 /* DioLibsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E23C449726CC62AB0016C981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C44A926CC62AE0016C981 /* LaunchScreen.storyboard in Resources */,
+				E23C44DA26CC6F130016C981 /* pokemon.json in Resources */,
+				E23C44A626CC62AE0016C981 /* Assets.xcassets in Resources */,
+				E23C44A426CC62AB0016C981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44AD26CC62AE0016C981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44B826CC62AE0016C981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E23C449526CC62AB0016C981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C44E526CC91FE0016C981 /* ViewController2.swift in Sources */,
+				E23C44D226CC69340016C981 /* PokemonResponse.swift in Sources */,
+				E23C44A126CC62AB0016C981 /* ViewController.swift in Sources */,
+				E23C449D26CC62AB0016C981 /* AppDelegate.swift in Sources */,
+				E23C449F26CC62AB0016C981 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44AB26CC62AE0016C981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C44B426CC62AE0016C981 /* DioLibsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23C44B626CC62AE0016C981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23C44BF26CC62AE0016C981 /* DioLibsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E23C44B126CC62AE0016C981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23C449826CC62AB0016C981 /* DioLibs */;
+			targetProxy = E23C44B026CC62AE0016C981 /* PBXContainerItemProxy */;
+		};
+		E23C44BC26CC62AE0016C981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E23C449826CC62AB0016C981 /* DioLibs */;
+			targetProxy = E23C44BB26CC62AE0016C981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E23C44A226CC62AB0016C981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23C44A326CC62AB0016C981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E23C44A726CC62AE0016C981 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E23C44A826CC62AE0016C981 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E23C44C126CC62AE0016C981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E23C44C226CC62AE0016C981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E23C44C426CC62AE0016C981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E23C44C526CC62AE0016C981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E23C44C726CC62AE0016C981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DioLibs.app/DioLibs";
+			};
+			name = Debug;
+		};
+		E23C44C826CC62AE0016C981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DioLibs.app/DioLibs";
+			};
+			name = Release;
+		};
+		E23C44CA26CC62AE0016C981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DioLibs;
+			};
+			name = Debug;
+		};
+		E23C44CB26CC62AE0016C981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5UNWAXTR5;
+				INFOPLIST_FILE = DioLibsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RMN.DioLibsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DioLibs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E23C449426CC62AB0016C981 /* Build configuration list for PBXProject "DioLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23C44C126CC62AE0016C981 /* Debug */,
+				E23C44C226CC62AE0016C981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23C44C326CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23C44C426CC62AE0016C981 /* Debug */,
+				E23C44C526CC62AE0016C981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23C44C626CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23C44C726CC62AE0016C981 /* Debug */,
+				E23C44C826CC62AE0016C981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23C44C926CC62AE0016C981 /* Build configuration list for PBXNativeTarget "DioLibsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23C44CA26CC62AE0016C981 /* Debug */,
+				E23C44CB26CC62AE0016C981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E23C44CC26CC634A0016C981 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		E23C44D326CC6E260016C981 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+		E23C44D626CC6E530016C981 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		E23C44DF26CC85BE0016C981 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E23C44CD26CC634A0016C981 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23C44CC26CC634A0016C981 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E23C44D426CC6E260016C981 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23C44D326CC6E260016C981 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E23C44D726CC6E530016C981 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23C44D626CC6E530016C981 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E23C44E026CC85BE0016C981 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23C44DF26CC85BE0016C981 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E23C449126CC62AB0016C981 /* Project object */;
+}
